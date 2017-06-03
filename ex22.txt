@@ -1,0 +1,54 @@
+Ruby functions and symbols
+
+puts - Used to print out Strings and Variables to the console.
+
+octothorpe (#) - used to comment out sections of code or write descriptions about the code.
+
+#{} - used to insert variables, equality statements, etc into puts
+
+Basic Operations
+plus (+)
+minus (-)
+slash (/)
+asterisk (*)
+percent (%)
+less-than (<)
+greater-than (>)
+less-than-equal (<=)
+greater-than-equal (>=)
+
+equal (=) used for asigning variable references or literals.
+
+double parentheses ("") used for inserting strings of text
+
+Boolean values
+-true
+-false
+
+print - prints to console but makes new line character
+
+
+below will format a string
+	formatter "%{}{}{}{}%"
+
+new line char (\n) makes a new line
+carriage return, tab char, (\t)
+
+
+$stdin - used for input
+gets.chomp - takes user input
+gets.chomp.to_i - takes user input and formats it into an 	integer
+
+ARGV - used to asign variables from command line arguments
+
+open() - used to open a file
+close() - used to close a file
+
+read - reads the file
+readline - reads one line of the file
+truncate - empties the file
+write() - writes to file
+seek(0) - move the read/write location to the beginning of 	the file.
+
+def/end - used to begin and end a function declaration
+return - used to return a value from a function
