@@ -1,15 +1,34 @@
-class Parent
+module Other
+
+	def override()
+		puts "OTHER override()"
+	end
 
 	def implicit()
-		puts "PARENT implicit()"
+		puts "OTHER implicit"
+	end
+
+	def Other.altered()
+		puts "OTHER altered()"
 	end
 end
 
-class Child < Parent
+class Child
+	include Other
+
+	def override()
+		puts "CHILD override()"
+	end
+
+	def altered()
+		puts "CHILD, BEFORE OTHER altered()"
+		Other.altered()
+		puts "CHILD, AFTER OTHER altered()"
+	end
 end
 
-dad = Parent.new()
 son = Child.new()
 
-dad.implicit()
 son.implicit()
+son.override()
+son.altered()
